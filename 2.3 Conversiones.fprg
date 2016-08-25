@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-22 05:07:12 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAxMjozNDoyMyBwLiBtLjsgMjQyOQ=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNTowNzoxMiBwLiBtLjsgMjQyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para convertir el peso y altura de una persona&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="nombre" type="String" array="False" size="" variables="nombre"/>
+            <declare name="edad" type="Integer" array="False" size="" variables="edad"/>
+            <declare name="estatura" type="Real" array="False" size="" variables="estatura"/>
+            <declare name="peso" type="Real" array="False" size="" variables="peso"/>
+            <declare name="estaturaf" type="Real" array="False" size="" variables="estaturaf"/>
+            <declare name="pesol" type="Real" array="False" size="" variables="pesol"/>
+            <declare name="relacionmp" type="Real" array="False" size="" variables="relacionmp"/>
+            <declare name="relacionkl" type="Real" array="False" size="" variables="relacionkl"/>
+            <assign variable="relacionmp" expression="3.2803"/>
+            <assign variable="relacionkl" expression="2.2046"/>
+            <output expression="&quot;Por favor, inserte su edad&quot;"/>
+            <input variable="edad"/>
+            <output expression="&quot;Ahora introduzca su nombre&quot;"/>
+            <input variable="nombre"/>
+            <output expression="&quot;Introduzca su peso en kilogramos&quot;"/>
+            <input variable="peso"/>
+            <output expression="&quot;Finalmente brindenos su estatura en metros&quot;"/>
+            <input variable="estatura"/>
+            <assign variable="estaturaf" expression="estatura*relacionmp"/>
+            <assign variable="pesol" expression="peso*relacionkl"/>
+            <output expression="&quot;Nombre: &quot; &amp; nombre  &amp;&#13;&#10;&quot;---Edad: &quot; &amp; edad  &amp;&#13;&#10;&quot;---Peso(kg): &quot; &amp; peso  &amp;&#13;&#10;&quot;---Altura(m): &quot; &amp; estatura  &amp;&#13;&#10;&quot;---Peso(libras): &quot; &amp; pesol  &amp;&#13;&#10;&quot;---Altura(pies): &quot; &amp; estaturaf"/>
+        </body>
+    </function>
+</flowgorithm>

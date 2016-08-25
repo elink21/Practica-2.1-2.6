@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-22 05:06:42 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAxMjozMDo1MyBwLiBtLjsgMjQyOA=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNTowNjo0MiBwLiBtLjsgMjQzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para calcular el area del triangulo&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="area" type="Real" array="False" size="" variables="area"/>
+            <declare name="base" type="Real" array="False" size="" variables="base"/>
+            <declare name="altura" type="Real" array="False" size="" variables="altura"/>
+            <output expression="&quot;Introduzca la base del triangulo&quot;"/>
+            <input variable="base"/>
+            <output expression="&quot;Ahora introduzca la altura&quot;"/>
+            <input variable="altura"/>
+            <if expression="(altura&gt;0)&amp;&amp;(base&gt;0)">
+                <then>
+                    <assign variable="area" expression="(base*altura)/2"/>
+                    <output expression="&quot;El area es &quot; &amp; area  &amp;&quot; unidades cuadradas&quot;"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

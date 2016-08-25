@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-22 05:08:34 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNDo1Mzo1MSBwLiBtLjsgMjQzMg=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNTowODozNCBwLiBtLjsgMjQzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para saber si un numero es par&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="numero" type="Integer" array="False" size="" variables="numero"/>
+            <output expression="&quot;Inserte el numero entero para saber si es par&quot;"/>
+            <input variable="numero"/>
+            <if expression="numero==0">
+                <then>
+                    <output expression="&quot;Es nulo&quot;"/>
+                </then>
+                <else>
+                    <if expression="numero%2==0">
+                        <then>
+                            <output expression="numero &amp; &quot; es par&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="numero &amp; &quot; es impar&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-22 05:08:08 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwMzo1Nzo1NiBwLiBtLjsgMjQ0MA=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNTowODowOCBwLiBtLjsgMjQzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para conocer el menor de 3 numeros&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="num1" type="Real" array="False" size="" variables="num1"/>
+            <declare name="num2" type="Real" array="False" size="" variables="num2"/>
+            <declare name="num3" type="Real" array="False" size="" variables="num3"/>
+            <output expression="&quot;Por favor,introduzca los tres numeros a comparar&quot;"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <if expression="(num1==num2) &amp;&amp; (num1==num3)">
+                <then>
+                    <output expression="&quot;Los tres son iguales&quot;"/>
+                </then>
+                <else>
+                    <if expression="(num1&gt;num2) &amp;&amp; (num1&gt;num3)">
+                        <then>
+                            <output expression="&quot;El mas grande es &quot; &amp; num1"/>
+                        </then>
+                        <else>
+                            <if expression="(num2&gt;num1) &amp;&amp; (num2&gt;num3)">
+                                <then>
+                                    <output expression="&quot;El mayor es &quot;  &amp; num2"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;El mas grande es &quot; &amp; num3"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

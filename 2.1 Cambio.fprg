@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-22 05:06:12 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAxMjoyNDoxMyBwLiBtLjsgMjQyNw=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTIyOyAwNTowNjoxMiBwLiBtLjsgMjQyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para calcular cambio&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="recibido" type="Real" array="False" size="" variables="recibido"/>
+            <declare name="precio" type="Real" array="False" size="" variables="precio"/>
+            <declare name="cambio" type="Real" array="False" size="" variables="cambio"/>
+            <output expression="&quot;Introduzca el precio del producto&quot;"/>
+            <input variable="precio"/>
+            <output expression="&quot;Introduzca la cantidad recibida&quot;"/>
+            <input variable="recibido"/>
+            <if expression="precio!=recibido">
+                <then>
+                    <assign variable="cambio" expression="recibido-precio"/>
+                    <output expression="&quot;El cambio es de &quot;  &amp; cambio &amp; &quot; $&quot;"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
